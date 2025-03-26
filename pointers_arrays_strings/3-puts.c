@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>  /* Inclure directement pour printf si nécessaire */
 
 /**
  * _puts - Affiche une chaîne suivie d'une nouvelle ligne
@@ -6,10 +6,10 @@
  */
 void _puts(char *str)
 {
-    while (*str != '\0')  // Tant qu'on n'atteint pas la fin de la chaîne
+    while (*str != '\0')  /* Tant qu'on n'atteint pas la fin de la chaîne */
     {
-        _putchar(*str);   // Affiche le caractère actuel
-        str++;            // Passe au caractère suivant
+        putchar(*str);   /* Affiche le caractère courant */
+        str++;            /* Passe au caractère suivant */
     }
-    _putchar('\n');        // Affiche une nouvelle ligne à la fin
+    putchar('\n');        /* Affiche une nouvelle ligne à la fin */
 }
