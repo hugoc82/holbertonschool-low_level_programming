@@ -10,14 +10,14 @@ void rev_string(char *s)
     int i;
     char temp;
 
-    // Find the length of the string
+    /* Find the length of the string */
     while (s[length] != '\0')
     {
         length++;
     }
 
-    // Reverse the string
-    for (i = 0; i < length / 2; i++)
+    /* Reverse the string */
+    for (i = 0; i < length / 2; i++)  /* Missing closing parenthesis fixed here */
     {
         temp = s[i];
         s[i] = s[length - i - 1];
