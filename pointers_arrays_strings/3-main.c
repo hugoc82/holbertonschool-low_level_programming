@@ -1,13 +1,15 @@
-#include <stdio.h> /* Inclure pour printf et putchar si nécessaire */
+#include "main.h"
 
-/* Déclaration de la fonction _puts */
-void _puts(char *str);
-
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
     char *str;
 
     str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-    _puts(str);  /* Utilise _puts sans besoin de main.h */
+    _puts(str);
     return (0);
 }
